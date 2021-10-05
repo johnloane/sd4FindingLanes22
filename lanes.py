@@ -4,7 +4,7 @@ import numpy as np
 #numpy.set_printoptions(threshold=sys.maxsize)
 
 image = cv2.imread("IMG_2095.jpg")
-image = cv2.resize(image, (1280, 960))
+image = cv2.resize(image, (960, 1280))
 lane_image = np.copy(image)
 grey = cv2.cvtColor(lane_image, cv2.COLOR_RGB2GRAY)
 blur = cv2.GaussianBlur(grey, (5, 5), 0)
